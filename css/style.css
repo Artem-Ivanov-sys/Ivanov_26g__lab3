@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 600px;
+    height: 600px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    border: 1px solid black;
+}
+
+.container > div {
+    border: 1px solid black;
+    position: relative;
+}
+
+.b1 {
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+} .b1 span {
+    position: absolute;
+    top: calc(50% - 1em / 2);
+    right: 1em;
+}
+.b2 {
+    background-color: lightcoral;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 9;
+} .b2 span {
+    position: absolute;
+    top: calc(50% - 1em / 2);
+    left: 50%;
+}
+.b3 {
+    background-color: lightgreen;
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+} .b3 span {
+    position: absolute;
+    top: calc(50% - 1em / 2);
+    left: 50%;
+}
+.b4 {
+    background-color: white;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 8;
+} .b4 span {
+    position: absolute;
+    top: calc(50% - 1em / 2);
+    left: 50%;
+}
+.b5 {
+    background-color: lightcoral;
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 4;
+    grid-row-end: 9;
+} .b5 span {
+    position: absolute;
+    top: calc(50% - 1em / 2);
+    left: 50%;
+}
+.b6 {
+    background-color: lightgreen;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 8;
+    grid-row-end: 9;
+} .b6 span {
+    position: absolute;
+    top: calc(50% - 1em / 2);
+    left: 50%;
+}
+.b7 {
+    background-color: lightblue;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 9;
+    grid-row-end: 11;
+} .b7 span {
+    position: absolute;
+    top: calc(50% - 1em / 2);
+    left: 1em;
+}
+
+#x {
+    position: absolute;
+    left: 1em;
+    top: calc(50% - 1em / 2 + 3px);
+    text-align: center;
+    padding: 3px;
+} #y {
+    position: absolute;
+    right: 1em;
+    top: calc(50% - 1em / 2 + 3px);
+    padding: 3px;
+} #ans {
+    position: absolute;
+    bottom: 0;
+} form {
+    position: absolute;
+    right: 1em;
+    top: 1em;
+} #number {
+    width: 100px;
+}
